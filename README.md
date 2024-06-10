@@ -22,14 +22,33 @@ Key features:
 **DataBase:** Mysql
 
 
-## Installation
+## Run Locally
 
-To run this project..
+Clone the project
 
 ```bash
-  - pull the code in system
-  - add mysql configurations in application properties
-  - run the program
-  - hit http://localhost:8080/ on your browser 
+  git clone https://github.com/Paresh018/Anime-Library-Java.git
 ```
-    
+
+Add mysql configurations in application properties
+
+```bash
+spring.datasource.name=*****
+spring.datasource.url= jdbc:mysql://localhost:3306/anime_store?ServerTimezone=UTC
+spring.datasource.username=*****
+spring.datasource.password=*****
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL57Dialect
+```
+
+Run the program in STS / Eclipse / Intellij
+
+ hit url on your browser
+
+```bash
+  http://localhost:8080/ 
+```
+
+
